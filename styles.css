@@ -11,12 +11,12 @@ header {
     column-gap: 50px;
     grid-template-columns: 1fr 2fr 1fr;
     padding: 3px;
-    background-color: aqua;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .logo{
     display: grid;
     grid-template-columns: auto auto auto;
-    position:relative;
   }
   .logo .bars {
     display: block;
@@ -32,10 +32,12 @@ header {
     cursor: pointer;
   } 
   div .play {
-display: block;
+display:block;
 margin: auto;
   }
   .play i{
+    position: relative;
+    bottom: 5px;
     color: white;
     font-size: small;
     background-color: red;
@@ -45,5 +47,30 @@ margin: auto;
   .play i:hover{
     cursor: pointer;
   }
+  .play a{
+    text-decoration: none;
+  }
+  .play span{
+    margin-bottom: 1000px;
+    color: black;
+    font-weight: 600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+ 
 
 
+.search{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  align-content: center;
+}
+
+
+
+  .profile{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    align-content: center;
+  }
