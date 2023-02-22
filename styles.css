@@ -13,6 +13,7 @@ header {
     padding: 3px;
     padding-top: 15px;
     padding-bottom: 15px;
+    background-color: aquamarine;
   }
   .logo{
     display: grid;
@@ -61,16 +62,75 @@ margin: auto;
 
 .search{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   align-items: center;
   align-content: center;
 }
 
-
-
+ input[type=text]{
+  display: inline-block;
+  color: rgb(70, 62, 62);
+  font-size: 20px;
+  padding: 8px;
+  margin: auto;
+  width: 450px;
+  border-right: 1px solid rgb(77, 67, 67);
+  border-radius: 20px;
+}
   .profile{
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
-    align-content: center;
+    justify-content: right;
   }
+  .profile div{
+    margin-right: 30px;
+  }
+  .profile > i{
+    margin-left: 20px;
+  }
+   img{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+  }
+  .right{
+    float: right;
+  }
+  #proff{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(238, 227, 227);
+    border-radius: 50%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .search  a,.profile a{
+    color: rgb(48, 45, 45);
+    font-size: 18px;
+    text-decoration: none;
+  }
+  i{
+    padding: 10px;
+  }
+  .pad:hover{
+    border-radius: 50%;
+    background-color: rgba(198, 217, 230,.5);
+  }
+  @media  (max-width:868px) {
+    input[type=text]{
+      display: inline-block;
+      color: rgb(70, 62, 62);
+      font-size: 17px;
+      padding: 8px;
+      margin: auto;
+      width: 300px;
+      border-right: 1px solid rgb(77, 67, 67);
+      border-radius: 20px;
+      background-color: aqua;
+    }
+  }
+ 
