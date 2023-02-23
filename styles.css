@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: rgb(253, 255, 255);
@@ -13,7 +14,10 @@ header {
     padding: 3px;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: aquamarine;
+    background-color: rgb(253, 255, 255);
+    position:fixed;
+    width: 100%;
+    top: 0px;
   }
   .logo{
     display: grid;
@@ -120,17 +124,100 @@ margin: auto;
     border-radius: 50%;
     background-color: rgba(198, 217, 230,.5);
   }
-  @media  (max-width:868px) {
+  @media  (max-width:1000px) {
     input[type=text]{
       display: inline-block;
       color: rgb(70, 62, 62);
       font-size: 17px;
       padding: 8px;
       margin: auto;
-      width: 300px;
+      width: 80%;
       border-right: 1px solid rgb(77, 67, 67);
       border-radius: 20px;
       background-color: aqua;
     }
+    header {
+    font-size: 23px;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: aquamarine;
+  }
+  }
+    @media  (max-width:700px) {
+    input[type=text]{
+      display: inline-block;
+      color: rgb(70, 62, 62);
+      font-size: 17px;
+      padding: 8px;
+      margin: auto;
+      width: 80%;
+      border-right: 1px solid rgb(77, 67, 67);
+      border-radius: 20px;
+      background-color: aqua;
+      display: none;
+    }
+    header {
+    font-size: 23px;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 150px auto 150px;
+    padding: 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+   /* background-color: aquamarine;*/
+  }
+   .profile div{
+    margin-right: 95px;
+  }
+  }
+  /** main content*/
+  main {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .video{
+    background-color: blue;
+    height: 200vh;
+    padding: 2.5em;
+    padding-top: .5em;
+  }
+  .vid_display{
+   background-color: brown;
+  }
+  #vid{
+    width: 100%;
+    height: 400px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: rgb(59, 56, 56);
+    padding:  10px 13px;
+    background-color: rgb(214, 217, 219);
+    border-radius: 7px;
+    margin: 2px;
+  }
+  nav ul li{
+    list-style: none;
+    margin: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+  }
+  nav ul{
+    display: inline;
+  }
+  div .link{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .link .vi{
+    width: 150px;
+    height: 100px;
   }
  
